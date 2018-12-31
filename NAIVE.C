@@ -79,18 +79,10 @@ int main()
   scanf("%[^\n]",sub);    //it will accept string till not press enter
   len=strlen(sub);
   p1=sub;
-  /*for(i=0;i<len;i++)
-  {
-    if(*p1 >=65 && *p1<=92)
-    {
-      *p1=*p1+32;                  //conversion from uppercase to lowercase
-      p1++;
-    }
-  }*/
-
-		 search(str,sub,len);     //calling search function
-     free(str);
-     free(sub);            //free the memory which were previously allocated
+ 
+  search(str,sub,len);     //calling search function
+  free(str);
+  free(sub);            //free the memory which were previously allocated
 
 getch();
 return 0;
